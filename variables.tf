@@ -6,7 +6,7 @@ variable "region" {
 
 variable lambda_zip_file {
   type = string
-  default  = "ffi-get-inventories"
+  default  = "ffi-get-inventories.zip"
   description = "lambda zipped archive to reference"
 }
 

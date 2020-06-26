@@ -101,11 +101,11 @@ resource "aws_iam_role_policy_attachment" "attach_vpc_policy" {
 }
 
 resource "aws_lambda_function" "lambda_function" {
-  filename      = "${var.lambda_zip_file}.zip"
+  filename      = var.lambda_zip_file
   function_name = "ffi-get-api-${random_string.rand.result}"
   role          = aws_iam_role.lambda_execution_role.arn
   handler       = "com.ffi.service.InventoryService::handleRequest"
-  source_code_hash = filebase64sha256("${var.lambda_zip_file}.zip")
+  source_code_hash = filebase64sha256(var.lambda_zip_file)
   timeout = "300"
 
   runtime = "java8"

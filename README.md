@@ -14,15 +14,17 @@ export AWS_PROFILE=<profile name>
 4. Lambda zipped code in the same dir as terraform
 
 
-## Required infrastructure setup before executing terraform
+## Required infrastructure setup before executing terraform.
 1. VPC & subnets
 2. RDS database setup
 3. Security group with connectivity between Lambda and RDS
+** Variables listed in the variables.tf file are from us-east-2 region.
 
 
 ## Run terraform
 
 * Change directory to terraform dir
+* Update
 * `terraform init` -- initializes the directory, downloads needed providers
 * `terraform plan` -- outputs the information regarding resources to be built/modified
 * `terraform apply` -- creates the resources
