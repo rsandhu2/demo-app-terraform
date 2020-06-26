@@ -14,13 +14,13 @@ export AWS_PROFILE=<profile name>
 4. Lambda zipped code in the same dir as terraform
 
 
-# Required infrastructure setup before executing terraform
+## Required infrastructure setup before executing terraform
 1. VPC & subnets
 2. RDS database setup
 3. Security group with connectivity between Lambda and RDS
 
 
-# Run terraform
+## Run terraform
 
 * Change directory to terraform dir
 * `terraform init` -- initializes the directory, downloads needed providers
@@ -29,5 +29,5 @@ export AWS_PROFILE=<profile name>
 * `terraform destroy` -- destroy all resources once done testing
 
 
-# Post terraform steps
+## Post terraform steps
 1. Copy the static React App code to S3 bucket created by terraform
