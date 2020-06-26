@@ -23,15 +23,19 @@ Variables listed in the variables.tf file are from us-east-2 region.
 ```
 
 
-## Run terraform
+## Build infrastructure
 
 * Change directory to terraform dir
 * Update
 * `terraform init` -- initializes the directory, downloads needed providers
 * `terraform plan` -- outputs the information regarding resources to be built/modified
-* `terraform apply` -- creates the resources
-* `terraform destroy` -- destroy all resources once done testing
+* `terraform apply` -- creates the resources. 
+* ```terrform will output the S3 bucket name where static web content will be uploaded in the next step```
 
 
 ## Post terraform steps
 1. Copy the static React App code to S3 bucket created by terraform
+
+
+## Destroy infrastructure
+* `terraform destroy` -- destroy all resources once done testing
