@@ -30,7 +30,9 @@ Variables listed in the variables.tf file are from us-east-2 region.
 * `terraform init` -- initializes the directory, downloads needed providers
 * `terraform plan` -- outputs the information regarding resources to be built/modified
 * `terraform apply` -- creates the resources. 
-* ```terrform will output the S3 bucket name where static web content will be uploaded in the next step```
+```bash
+terrform will output the S3 bucket name where static web content will be uploaded in the next step
+```
 
 
 ## Post terraform steps
