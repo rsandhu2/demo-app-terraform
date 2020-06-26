@@ -6,9 +6,11 @@ Below are the steps to setup the infrastructure for the demo app.
 * Download Terraform: https://www.terraform.io/downloads.html
 * Install AWS CLI: https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-windows.html
 * Setup AWS profile with secret/access keys
-`aws configure --profile <profile name>`
-`export AWS_DEFAULT_PROFILE=<profile name>`
-`export AWS_PROFILE=<profile name>`
+```bash
+aws configure --profile <profile name>
+export AWS_DEFAULT_PROFILE=<profile name>
+export AWS_PROFILE=<profile name>
+```
 
 
 # Run terraform
