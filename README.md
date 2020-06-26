@@ -18,7 +18,9 @@ export AWS_PROFILE=<profile name>
 1. VPC & subnets
 2. RDS database setup
 3. Security group with connectivity between Lambda and RDS
-** Variables listed in the variables.tf file are from us-east-2 region.
+```base
+Variables listed in the variables.tf file are from us-east-2 region.
+```
 
 
 ## Run terraform
