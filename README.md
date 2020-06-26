@@ -11,7 +11,7 @@ aws configure --profile <profile name>
 export AWS_DEFAULT_PROFILE=<profile name>
 export AWS_PROFILE=<profile name>
 ```
-4. Lambda zipped code in the same dir as terraform
+4. Lambda zipped code in the same dir as terraform. zip file name is defined in variables.tf, can be changed to anything
 
 
 ## Required infrastructure setup before executing terraform.
